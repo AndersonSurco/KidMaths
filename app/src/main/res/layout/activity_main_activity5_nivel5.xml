@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaperprincipal"
+    android:contentDescription="@string/app_name"
+    tools:context=".MainActivity5Nivel5">
+
+    <TextView
+        android:id="@+id/textView_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/jugador_nombre"
+        android:textColor="@color/primary"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView_vidas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_nombre"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/et_vidas"
+        android:textColor="@color/primary"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_vidas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/total_score"
+        android:textColor="@color/primary"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:id="@+id/imageView_vidas"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="54dp"
+        android:layout_toEndOf="@+id/textView_vidas"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/tresvidas" />
+
+    <ImageView
+        android:id="@+id/imageView_NumUno"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/cero" />
+
+    <ImageView
+        android:id="@+id/imageView_signo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/multiplicacion" />
+
+    <ImageView
+        android:id="@+id/imageView_NumDos"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/cero" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="200dp"
+        android:layout_toStartOf="@+id/button2"
+        android:ems="10"
+        android:hint="@string/et_respuesta"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="145dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/fondoboton"
+        android:onClick="Comparar"
+        android:text="@string/boton_probar"
+        android:textSize="15sp" />
+</RelativeLayout>

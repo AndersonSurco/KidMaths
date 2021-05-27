@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/globos"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewPesronaje"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:srcCompat="@drawable/fresa" />
+
+    <EditText
+        android:id="@+id/txtnombre"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/fondoet"
+        android:ems="10"
+        android:hint="@string/et_nombre"
+        android:inputType="textPersonName"
+        android:maxLength="15"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/primary_dark"
+        android:textColorHint="@color/primary_dark"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/fondoboton"
+        android:onClick="Jugar"
+        android:text="@string/boton"
+        android:textColor="@color/white"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/textView_BestScore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/fondoet"
+        android:contentDescription="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/primary_dark"
+        android:textSize="25dp" />
+</RelativeLayout>
